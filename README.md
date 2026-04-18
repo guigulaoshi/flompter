@@ -1,34 +1,36 @@
-# flompter (Floating Teleprompter)
+# Android Floating Teleprompter (安卓浮窗提词器)
 
-一款简洁好用的安卓悬浮提词器 App。由于找不到满意的提词器 App，所以自己写了一款。欢迎大家自由使用！
+> **简介**：一款简洁好用的安卓悬浮提词器 App，可悬浮在任何应用之上，适合直播、拍视频、演讲、朗读。支持自动滚动、速度/字号调节、手动拖动定位。[点击下载 APK](https://github.com/guigulaoshi/flompter/raw/main/app/build/outputs/apk/debug/app-debug.apk)（需安卓 14+）。欢迎自由使用！
 
-## 下载
+A lightweight floating teleprompter for Android. The prompter window sits on top of any app, so it works for livestreams, video recording, speeches, and reading practice.
 
-[点击这里下载最新 APK](https://github.com/guigulaoshi/flompter/raw/main/app/build/outputs/apk/debug/app-debug.apk)
+## Download
 
-> 需要安卓 14（API 34）或更高版本。首次运行会请求"显示在其他应用上层"的权限，用于显示悬浮窗。
+[Download the latest APK](https://github.com/guigulaoshi/flompter/raw/main/app/build/outputs/apk/debug/app-debug.apk)
 
-## 功能
+> Requires Android 14 (API 34) or later. On first launch the app asks for the "Display over other apps" permission, which is needed to render the floating window.
 
-- **悬浮窗提词**：在任何 App 之上显示提词内容，适合直播、拍视频、演讲、朗读。
-- **自动滚动**：支持播放/暂停，滚动速度可调。
-- **字号调节**：字体大小实时可调。
-- **手动拖动**：在提词区域上下滑动，手动调整阅读位置。
-- **窗口移动**：拖动底部控制栏，可上下移动悬浮窗位置。
-- **自动记忆**：自动保存上次的文本内容、滚动速度和字号设置。
+## Features
 
-## 使用方法
+- **Floating overlay** — displays on top of any app, ideal for livestreams, video recording, speeches, and reading.
+- **Auto-scroll** — play/pause with adjustable scroll speed.
+- **Font size control** — change text size on the fly.
+- **Manual drag** — swipe inside the prompt area to jump to any position.
+- **Movable window** — drag the control bar to reposition the floating window vertically.
+- **Persistent settings** — remembers your last script, scroll speed, and font size.
 
-1. 打开 App，在主界面输入要显示的提词内容。
-2. 点击底部按钮，授予悬浮窗权限后进入悬浮窗模式。
-3. 悬浮窗分为两部分：
-   - **上半部分**：显示提词文本，可上下拖动调整位置。
-   - **下半部分**：控制栏，包含滚动速度、字号、播放/暂停、编辑、关闭按钮。
-4. 点击 **Edit** 返回主界面修改文本，点击 **Close** 关闭悬浮窗。
+## How to Use
 
-## 从源码构建
+1. Open the app and type (or paste) the script you want to read.
+2. Tap the bottom button and grant the overlay permission to enter floating mode.
+3. The floating window has two parts:
+   - **Top** — prompt text, draggable to reposition.
+   - **Bottom** — control bar with speed slider, size slider, and Play/Pause, Edit, Close buttons.
+4. Tap **Edit** to return to the main screen and change the script; tap **Close** to dismiss the floating window.
 
-本项目使用 Kotlin + Gradle 构建，需要 Android Studio。
+## Build from Source
+
+Kotlin + Gradle. Android Studio recommended.
 
 ```bash
 git clone https://github.com/guigulaoshi/flompter.git
@@ -36,15 +38,15 @@ cd flompter
 ./gradlew assembleDebug
 ```
 
-构建产物位于 `app/build/outputs/apk/debug/app-debug.apk`。
+The output APK lands in `app/build/outputs/apk/debug/app-debug.apk`.
 
-### 项目信息
+### Project Info
 
-- 语言：Kotlin
-- 最低 SDK：Android 14（API 34）
-- 目标 SDK：Android 15（API 35）
-- 包名：`com.guigulaoshiren.floatingprompter`
+- Language: Kotlin
+- Min SDK: Android 14 (API 34)
+- Target SDK: Android 15 (API 35)
+- Package: `com.guigulaoshiren.floatingprompter`
 
-## 反馈
+## Feedback
 
-欢迎提 Issue 或 PR。
+Issues and PRs welcome.
