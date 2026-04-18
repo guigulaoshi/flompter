@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Flompter</string>
+    <string name="app_name">flompter</string>
     <string name="close_editor_and_open_floating_window">Close editor and open floating window</string>
     <string name="scrolling_speed">Scrolling speed</string>
     <string name="font_size">Font size</string>
